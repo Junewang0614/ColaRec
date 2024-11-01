@@ -10,25 +10,25 @@ Colarec is a model that unifies both item content information and user-item coll
 
 
 ## Requirements
-'''
+```
 pytorch == 1.12.1
 transformers == 4.30.2
 k-means-constrained == 0.7.3
 accelerate == 0.21.0 
-'''
+```
 
 
 ## Usage
 
 ### Training
-'''sh
+```sh
 python model_train.py --info="phone-short-model-gen008-cl01" --seq_type="short" --dataset="phone" --cid_token_num=32 --batch_size=128 --generate_lamda=0.08 --content_cl_lamda=0.1
-'''
+```
 
 ### Evaluation
-'''sh
+```sh
 python model_eval.py --eval_model_mkdir="" --dataset="phone" --seq_type="short" --n_epochs=100 --start=1 --eval_batch_size=20
-'''
+```
 
 eval_model_mkdir denotes to the path in which the trained model is stored.
 
