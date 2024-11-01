@@ -32,7 +32,7 @@ python model_eval.py --eval_model_mkdir="" --dataset="phone" --seq_type="short" 
 
 eval_model_mkdir denotes to the path in which the trained model is stored.
 
-### others
+### Others
 * Code for hierarchical clusting to conduct GID: `hierarchical_cluster.py`
 
 ## Citation
