@@ -85,7 +85,7 @@ if __name__ == '__main__':
     accelerator = accelerate.Accelerator()
     embedding_dict = torch.load(embedding_file,map_location=accelerator.device)
 
-    t5embed = embedding_dict['t5content']
+    # content_embed = embedding_dict['content']
     colla_embed = embedding_dict['colla']
     solution = Solution(colla_embed,length=3,cluster=32)
     # start
